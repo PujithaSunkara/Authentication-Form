@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* =========================
+   LOGIN / SIGNUP
+========================= */
+
+.auth-card {
+  width: 380px;
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-field {
+  width: 100%;
+  padding: 13px 14px;
+  margin-bottom: 18px;
+
+  border: 1px solid #d5d5d5;
+  border-radius: 7px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.input-field:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px
+    rgba(79, 70, 229, 0.1);
+}
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.primary-btn {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #4338ca;
+}
+
+/* =========================
+   SECONDARY BUTTON
+========================= */
+
+.secondary-btn {
+  width: 100%;
+  padding: 11px;
+
+  border: 1px solid #4f46e5;
+  border-radius: 7px;
+
+  background: white;
+  color: #4f46e5;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.secondary-btn:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* =========================
+   SWITCH TEXT
+========================= */
+
+.switch-text {
+  text-align: center;
+  margin: 22px 0 10px;
+
+  color: #666;
+  font-size: 14px;
+}
+
+/* =========================
+   STUDENT CARD
+========================= */
+
+.student-card {
+  width: 420px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.student-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.student-header h1 {
+  font-size: 25px;
+  color: #222;
+  margin-bottom: 7px;
+}
+
+.student-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* =========================
+   STUDENT DETAILS
+========================= */
+
+.student-details {
+  border: 1px solid #e0e0e0;
+  border-radius: 9px;
+
+  padding: 20px;
+
+  background: #fafafa;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #777;
+  font-size: 14px;
+}
+
+.detail-row strong {
+  color: #222;
+  font-size: 15px;
+}
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-message {
+  text-align: center;
+
+  padding: 25px;
+
+  color: #777;
+
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+  font-size: 18px;
+  color: #555;
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout-btn {
+  margin-top: 25px;
+
+  padding: 11px 30px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #dc2626;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .auth-card,
+  .student-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+  }
+}
